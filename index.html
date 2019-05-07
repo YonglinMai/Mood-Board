@@ -4073,30 +4073,30 @@ function backgroundImg(back){
 }
 function delight(){
     displayColor("pink");
-    backgroundImg(background[1]);
+    backgroundImg(background[0]);
     delightedImg.forEach(function(dI){
         $(".pics").append("<img src=" + dI + ">");
     });
 }
 function alive(){
     displayColor("yellow");
-    backgroundImg(background[2]);
-    aliveImg.forEach(function(dI){
-        $(".pics").append("<img src=" + dI + ">");
+    backgroundImg(background[1]);
+    aliveImg.forEach(function(aI){
+        $(".pics").append("<img src=" + aI + ">");
     });
 }
 function depressed(){
     displayColor("blue");
-    backgroundImg(background[3]);
-    depressedImg.forEach(function(dI){
-        $(".pics").append("<img src=" + dI + ">");
+    backgroundImg(background[2]);
+    depressedImg.forEach(function(deI){
+        $(".pics").html("<img src=" + deI + ">");
     });
 }
 function hopeless(){
-    displayColor("pink");
-    backgroundImg(background[1]);
-    hopelessImg.forEach(function(dI){
-        $(".pics").append("<img src=" + dI + ">");
+    displayColor("red");
+    backgroundImg(background[3]);
+    hopelessImg.forEach(function(hI){
+        $(".pics").html("<img src=" + hI + ">");
     });
 }
 
